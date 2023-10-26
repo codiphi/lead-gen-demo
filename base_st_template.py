@@ -27,7 +27,7 @@ import time
 
 ################################
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = ''
 llm = ChatOpenAI(model="gpt-4")
 
 ##################################################################################
