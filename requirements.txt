@@ -1,3 +1,4 @@
 streamlit-chat
 langchain
 qdrant_client
+openai
