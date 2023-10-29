@@ -1,7 +1,6 @@
 from langchain.vectorstores import Qdrant
 from langchain.embeddings import OpenAIEmbeddings
 import qdrant_client
-import os
 from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI
 from langchain.schema import retriever

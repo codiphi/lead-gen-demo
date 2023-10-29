@@ -1,6 +1,5 @@
 import streamlit as st
 from streamlit_chat import message # type: ignore
-import time
 import vector_db
 
 def generate_response(prompt):
