@@ -30,6 +30,8 @@ if 'ai_messages' not in st.session_state:
 if 'all_messages' not in st.session_state:
     st.session_state['all_messages'] = []
     update_message_state('assistant', init_message)
+if 'intent' not in st.session_state:
+    st.session_state['intent'] = []
 
 with container:
     with st.form(key='my_form', clear_on_submit=True):
@@ -63,6 +65,6 @@ if st.session_state['all_messages']:
             for i in range(len(st.session_state['user_messages'])):
                 message(st.session_state['ai_messages'][i], key=str(i))
                 message(st.session_state['user_messages'][i], is_user=True, key=str(i) + '_user')
-                print(i, ':', len(st.session_state['user_messages']))
+                # print(i, ':', len(st.session_state['user_messages']))
             message(st.session_state['ai_messages'][-1], key=str(-1))
             
